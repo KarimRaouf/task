@@ -29,7 +29,7 @@ class DistrictAdapter : ListAdapter<District, DistrictAdapter.ViewHolder>(DiffCa
 
     class DiffCallback : DiffUtil.ItemCallback<District>() {
         override fun areItemsTheSame(oldItem: District, newItem: District): Boolean {
-            return oldItem.districtId == newItem.districtIdf
+            return oldItem.districtId == newItem.districtId
         }
 
         override fun areContentsTheSame(oldItem: District, newItem: District): Boolean {
